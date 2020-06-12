@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Recognition</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+<div id='animate'>
+    <p>Loading the Model Please Wait (5-10 sec)....</p>
+</div>
+
+<div class='done'>
+
+    <div class="container">
+        <video id='video' autoplay></video>
+        <!-- <canvas id="canvas"></canvas> -->
+        <audio src="./audio/audio4.mp3" id='audio'></audio>   
+    </div>
+
+    <div id='text'>
+        <h2 id='title'>Hand Recognition Music Player</h2>
+        <img src="./img.png">
+        <h3>Please Read The Instructions First :</h3>
+        <ul>
+            <li>The WebApp uses <strong>Handtrackjs</strong> Library for Hand Recognition.</li>
+            <li>Use your <strong>Palm</strong> &#9995; to hover over the 4 stripes</li>
+            <li>If possible keep your Head away from the webcam.</li>
+            <li>Click on <strong>Start</strong> to start the webcam and <strong>Stop</strong> to stop it</li>
+            <li>The Image is added just for fun &#128540;</li>
+        </ul>
+        <p><strong>P.S</strong> : <em>The app is not polished yet but will be done in the Future...</em></p>
+    <button id='start'>Start</button>
+    <button id='stop'>Stop</button>
+    </div>
+
+    <button class="button button1">Violin</button>
+    <button class="button button2">Flute</button>
+    <button class="button button3">Drum</button>
+    <button class="button button4">Electric Guitar</button>
+
+</div>
+
+    <!-- We are handtrack.js Lib for Hand Gestures Recognition -->
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
